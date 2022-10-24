@@ -24,14 +24,12 @@ int main(int argc, char const *argv[])
 int steppingNumbers(int start, int end) {
   int count = 0;
   for (int i = start; i <= end; i++) {
-    cout << i << ": ";
     if (isSteppingNumber(i)) {
-      cout << "YES\n";
+      cout << i << " ";
       count++;
-    } else {
-      cout << "NO\n";
     }
   }
+  cout << "\n";
 
   return count;
 }
